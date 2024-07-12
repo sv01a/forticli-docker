@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 ENV VPN_TIMEOUT=30
 
 RUN apt-get update && \
-  apt-get install -y expect wget net-tools iproute ipppd iptables ssh && \
+  apt-get install -y expect wget net-tools iproute ipppd iptables ssh git && \
   rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt/forticlient
